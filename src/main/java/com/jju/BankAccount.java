@@ -1,3 +1,6 @@
+package com.jju;
+
+
 public class BankAccount {
     private String accountHolder;
     protected double balance; // Protected so subclasses can see it, but not the public
@@ -17,5 +20,8 @@ public class BankAccount {
 
     public double getBalance() {
         return balance;
+    }
+    public String getAccountHolder() {
+        return accountHolder;
     }
 }
