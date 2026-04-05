@@ -12,10 +12,16 @@ public class BankAccount {
 
     public void deposit(double amount) {
         // Student Task: Implement deposit logic with validation
+        if (amount > 0) {
+        balance += amount;
+    }
     }
 
     public void withdraw(double amount) {
         // Student Task: Implement withdrawal logic (prevent overdraft)
+         if (amount > 0 && balance >= amount) {
+        balance -= amount;
+    }
     }
 
     public double getBalance() {

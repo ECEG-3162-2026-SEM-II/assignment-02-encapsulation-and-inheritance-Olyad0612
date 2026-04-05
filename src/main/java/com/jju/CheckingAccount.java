@@ -13,10 +13,9 @@ public class CheckingAccount extends BankAccount {
     public void withdraw(double amount) {
         // Define the variable
         double totalDeduction = amount + TRANSACTION_FEE;
-       // 2. Student Task: Implement withdraw logic here
 
         if (amount > 0 && balance >= totalDeduction) {
-            super.withdraw(totalDeduction);
+    super.withdraw(totalDeduction);
         }
     }
 
